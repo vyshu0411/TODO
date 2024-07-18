@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.5em;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="date"],
+.input-container select {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-container button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.input-container button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li .actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px; /* Space between task text and buttons */
+}
+
+li button {
+    background-color: #dc3545;
+    padding: 7px 12px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+li button.edit {
+    background-color: #ffc107;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+li button.edit:hover {
+    background-color: #e0a800;
+}
+
+.task-details {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 5px; /* Space between task text and details */
+}
